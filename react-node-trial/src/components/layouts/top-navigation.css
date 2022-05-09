@@ -1,0 +1,96 @@
+#topNav{
+	padding: 12px 0;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	overflow: hidden;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+	
+    transition: padding-top, padding-bottom 0.3s ease-in;
+    -webkit-transition: padding-top, padding-bottom 0.3s ease-in;
+    -moz-transition: padding-top, padding-bottom 0.3s ease-in;
+    -o-transition: padding-top, padding-bottom 0.3s ease-in;
+	
+}
+
+#topNav .navbar-logo{
+	float: left;
+	display: inline;
+	line-height: 84px;
+	margin-right: 12px;
+	font-size: 16px;
+}
+
+#topNav .menu-icon-container{
+	float: right;
+	padding: 18px 0;
+	cursor: pointer;
+	display: none;
+}
+
+#topNav .menu-icon-container .menu-bar{
+	width: 50px;
+	height: 6px;
+	background-color: #212529;
+	margin: 6px 0;
+	transition: 0.4s;
+	display: block;
+	margin-right: 12px;
+	font-size: 16px;
+}
+
+#topNav .navbar{
+	display: inline-block;
+}
+
+.navbar .navbar-item{ 
+	padding: 15px; 
+	position: relative;
+	float: left;
+}
+
+.navbar .navbar-item > .navbar-link{ 
+	font-size: 16px;
+	position: relative;
+	display: block;
+}
+
+.navbar .navbar-item.active > .navbar-link::before{
+	width: 100%;
+}
+
+.navbar .navbar-item > .navbar-link.active::before{
+	width: 100%;
+}
+
+.navbar .navbar-item > .navbar-link::before{
+	content : "";
+	width: 0%;
+	background-color: skyblue;
+	border-radius: 1rem;
+	height: 0.3rem;
+	position: absolute;
+	bottom: -14px;
+	display: block;
+
+	transition: width 0.5s ease-in-out;
+	-webkit-transition: width 0.5s ease-in-out;
+	-moz-transition: width 0.5s ease-in-out;
+	-o-transition: width 0.5s ease-in-out;
+}
+
+.navbar .navbar-item > .navbar-link:hover::before{
+	width: 100%;
+}
+
+@media(max-width: 767px){
+	#topNav .menu-icon-container{
+		display: inline;
+	}
+
+	#topNav .navbar{
+		display: none;
+	}
+}

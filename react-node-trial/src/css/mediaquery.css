@@ -1,0 +1,27 @@
+/* screens >= 1200px */
+@media(min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+
+/* screens < 1200px and >= 992px */
+@media(min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+
+/* screens < 992px and >= 768px */
+@media(min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+/* screens <= 767px */
+@media(max-width : 767px){
+    .container{
+        width: auto;
+    }
+}

@@ -1,0 +1,21 @@
+
+#sideNav .sidenavbar-logo{
+    display: block;
+    color: white;
+}
+
+#sideNav .sidenavbar{
+    margin: 0;
+}
+.sidenavbar .sidenavbar-item{ 
+	padding: 15px; 
+	position: relative;
+    display: block;
+}
+
+.sidenavbar .sidenavbar-item > .sidenavbar-link{ 
+	font-size: 16px;
+	position: relative;
+	display: block;
+    color: white;
+}
